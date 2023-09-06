@@ -1,0 +1,10 @@
+**** Verificar errores en el formulario
+
+1- Armado de formulario para registrarse -> hashing -  Guardarlo en .json
+
+2- Armado de formulario para loguearse
+
+Session
+Cookies
+
+
