@@ -17,6 +17,6 @@ router.get('/', arrValidate, validationSearch, validateAdmin, adminController.re
 
 // Registrar Admin
 router.get('/create', adminController.formCreate);
-router.post('/create', arrRegister, validateRegister, adminController.createUser)
+router.post('/create',upload.single('avatar'), arrRegister, validateRegister, adminController.createUser)
 
 module.exports = router;
