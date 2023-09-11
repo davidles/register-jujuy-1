@@ -14,7 +14,8 @@ const adminController = {
     },
 
     createUser: (req, res) =>{
-        res.redirect('/admin/profile')
+        // res.redirect('/admin/profile')
+        res.send('Usuario Registrado')
     }
 }
 
