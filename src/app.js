@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
+const session = require('express-session');
 
 /** Nuestro middlewares Requeridos */
 const userLogs = require('./middlewares/userLogs');
@@ -19,6 +20,15 @@ app.use(express.json());
 
 app.use(logger('dev'));
 app.use(cookieParser());
+
+/** Session */
+app.set('trust proxy', 1) // trust first proxy
+app.use(session({
+  secret: 'new cat',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: true }
+}))
 
 /** Propios */
 app.use(userLogs);

@@ -95,4 +95,24 @@ El usuario ingresó a la ruta: / con el método http de: GET
     El usuario ingresó a la ruta: /admin/create con el método http de: POST
     El usuario ingresó a la ruta: /admin/create con el método http de: POST
     El usuario ingresó a la ruta: /usuarios con el método http de: GET
+    El usuario ingresó a la ruta: / con el método http de: GET
+    El usuario ingresó a la ruta: /profile con el método http de: GET
+    El usuario ingresó a la ruta: /admin/create con el método http de: GET
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /usuarios con el método http de: GET
+    El usuario ingresó a la ruta: /admin/create con el método http de: GET
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /usuarios con el método http de: GET
+    El usuario ingresó a la ruta: / con el método http de: GET
+    El usuario ingresó a la ruta: /admin/create con el método http de: GET
+    El usuario ingresó a la ruta: /admin/create con el método http de: POST
+    El usuario ingresó a la ruta: /admin/profile con el método http de: GET
+    El usuario ingresó a la ruta: / con el método http de: GET
     

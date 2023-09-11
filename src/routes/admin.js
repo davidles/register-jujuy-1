@@ -15,6 +15,8 @@ const { arrRegister, validateRegister } = require('../middlewares/validateRegist
 // queryString ?user=Lika
 router.get('/', arrValidate, validationSearch, validateAdmin, adminController.render);
 
+router.get('/profile',  adminController.profile);
+
 // Registrar Admin
 router.get('/create', adminController.formCreate);
 router.post('/create',upload.single('avatar'), arrRegister, validateRegister, adminController.createUser)

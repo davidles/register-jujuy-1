@@ -3,13 +3,18 @@ const adminController = {
         res.send(`Hola admin: ${req.query.user}`)
     },
 
+    /** Perfil */
+    profile: (req, res) =>{
+        res.render('profile')
+    },
+
     /*** Registrar usuario */
     formCreate: (req, res) =>{
         res.render('create')
     },
 
     createUser: (req, res) =>{
-        res.redirect('/usuarios')
+        res.redirect('/admin/profile')
     }
 }
 

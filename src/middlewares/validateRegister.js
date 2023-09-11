@@ -1,5 +1,8 @@
 // Requires! Modules
 const { body, validationResult } = require('express-validator');
+const path = require('node:path');
+const fs = require('node:fs');
+const data = require('../data/dataUsers.json');
 
 const arrRegister = [
     body('username').notEmpty().withMessage('Debes ingresar un nombre de usuario'),
@@ -11,17 +14,25 @@ const validateRegister = ( req, res, next) =>{
 
     const errors = validationResult(req);
 
-    console.log(req.body)
+    // Intentar
+    try{
+        if(errors.isEmpty()){
+            next()
+    
+        }else{
+            // Lanzar
+            throw errors
+        }
 
-    if(errors.isEmpty()){
-        next()
-
-    }else{
+    // Capturar
+    }catch(err){
         res.render('create',{
-            errors: errors.mapped(),
+            errors: err.mapped(),
             old: req.body
         })
     }
+
+
 
 }
 
